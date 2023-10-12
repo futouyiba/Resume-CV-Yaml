@@ -3,17 +3,16 @@ icon: null
 description: null
 list:
     -
-        title: 技术策划
-        subtitle: 二人工作室Hyperbola Games
-        subtitleDetail: '迷你工作室'
+        title: 开发者
+        subtitle: 自有游戏开发工作室
+        subtitleDetail: 'UEFN项目工作室'
         date: '2023.05 - Now'
         tags:
             - 游戏设计
             - 工程开发
         description:
-            - 我们看好虚幻对元宇宙的思考，对他们给出的答案-UEFN十分认同。决定2人小组自费研发《Inside Us》。
-            - 工作室仅有2人，在项目中，宋甫负责产品设计、数值平衡与编程，尝试做减法，单纯的做专业的事。
-            - 第一版开发完成，但创作者资质审核遇到黑天鹅。
+            - 在UEFN自定义岛屿当中实践对游戏的理解
+            - 开发完成，发布账号被Epic Games关闭（因贸易壁垒等因素，UEFN的平台在中国不再提供服务）。
     -
         title: 制作人
         subtitle: 西南偏南（北京）科技有限公司
