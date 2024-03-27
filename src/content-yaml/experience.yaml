@@ -3,17 +3,30 @@ icon: null
 description: null
 list:
     -
-        title: 开发者
-        subtitle: 自有游戏开发工作室
+        title: 助理研究员
+        subtitle: 清华大学信息学院网络所
+        date: '2023.11 - Now'
+        tags:
+            - 人工智能
+            - 软件工程
+            - 科研
+        description:
+            - 负责项目<Fast Approximate Traffic Classifier Within Network Hardware>中的软件工程和数学部分
+            - 项目成果主要用于网络安全, 其中运用了可微的快速乘积量化-矩阵模拟决策树-MixerMLP等技术, 用神经网络来甄别恶意网络包, 但是用超高速乘积量化解决了网络硬件的推导性能问题; 同时, 实现了超高速乘积量化的训练可微问题
+            - 宋甫负责的软件工程部分完成, 硬件化部分由其他组员进行中
+    -
+        title: 技术策划
+        subtitle: Hyperbola工作室
         subtitleDetail: 'UEFN项目工作室'
-        date: '2023.05 - Now'
+        date: '2023.05 - 2023.10'
         tags:
             - 游戏设计
             - 数值设计
             - 工程开发
         description:
-            - 针对Fortnite Creative开发者分成协议，制作UEFN自定义岛屿玩法。
-            - 首个项目开发完成，测试阶段发布账号被平台关闭（因国际环境，UEFN平台在中国不再提供服务）。
+            - 针对Fortnite Creative开发者分成协议，制作UEFN自定义岛屿玩法
+            - 工作室2人, 宋甫在其中负责游戏设计和代码实现, 美术以及营销由合伙人负责
+            - 开发了地图<Meme Tycoon>,<Zombie Simulator>，测试阶段发布账号被平台关闭（因国际环境，UEFN平台在中国不再提供服务）。
     -
         title: 制作人
         subtitle: 西南偏南（北京）科技有限公司
@@ -40,7 +53,7 @@ list:
             - 管理11人团队
             - 找到云游戏的长期核心价值，在技术尚不成熟的情况下找到产品突破口，立项《云原生游戏项目》
             - 在项目中自己撰写了第一版设计案,自己制作了第一版AIController+状态机（混合行为树）
-            - 离开原因：公司被资本大潮裹挟，不做游戏了
+            - 离开原因：公司被资本影响，不做游戏了
     -
         title: 制作人
         subtitle: 北京开天创世科技有限公司
