@@ -3,7 +3,7 @@ icon: archive
 description: null
 list:
     -
-        title: 《Fast Approximate Traffic Classifier Within Network Hardware》
+        title: <In-Network Fast Approximate Traffic Classifier>
         subtitle: 软硬件超高效率神经网络提升网络安全的科研项目
         tags:
             - LUT-AMM
@@ -12,8 +12,7 @@ list:
         description:
             - 使用结合LUT的Approximate Matrix Multiplication, 将模型inference速度提升数十倍. 此技术比较适合游戏、网络传输等高响应速度的场景。
             - 实现了LUT-AMM的可微和可训练, 将超高速矩阵乘法带来的精度损失降低至1%以下。
-            - 宋甫在其中负责软件工程和数学部分, 使用技术主要为torch/c++/eigen/python等。
-            - 宋甫负责的软件工程部分完成, 硬件化部分由其他组员进行中，主要使用P4等技术。
+            - 宋甫在其中负责软件工程和算法部分, 使用技术主要为torch/c++/eigen/python等。目前此部分完成，继续长期维护（每周约需要1小时）。硬件化部分由其他组员进行中，主要使用P4等技术。
     -
         title: 《Zombie Simulator》
         subtitle: UEFN平台的非对称射击岛屿
