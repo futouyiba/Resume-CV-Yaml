@@ -3,6 +3,7 @@ import profile from './profile.yaml';
 import experience from './experience.yaml';
 import projects from './projects.yaml';
 
+const normalizeYaml = module => (module && module.default ? module.default : module);
 
 // const YAML = require('yaml');
 // const fs = require('fs');
@@ -17,10 +18,10 @@ import projects from './projects.yaml';
 // console.log(`sidebarSub:${sidebarYaml}`);
 
 export const data = {
-  sidebar,
-  profile,
-  experience,
-  projects,
+  sidebar: normalizeYaml(sidebar),
+  profile: normalizeYaml(profile),
+  experience: normalizeYaml(experience),
+  projects: normalizeYaml(projects),
 };
 
 export default data;

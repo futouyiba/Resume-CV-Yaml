@@ -1,6 +1,8 @@
 name:
     title:
         - 15年工作经验
+        - 技术型策划 / 玩法实现
+        - UE / Unity 原型验证
     name: '宋 甫'
 contact:
     email:
@@ -27,17 +29,39 @@ education:
             date: 2004.7-2008.7
             courses: '经济学学士（精算学专业） & 法学学士（辅修）'
 interests:
-    title: 兴趣点
+    title: 核心能力
     list:
         -
-            name: 游戏设计
-            description: 游戏是我一生的热爱。游戏如何反映人性、如何带给人新的视野、如何让人得到最多的乐趣，值得不懈的探索
+            name: 玩法实现
+            description: 能将玩法设计拆解为输入、状态、行为与反馈，并通过可运行原型验证逻辑和体验。
         -
-            name: 数值
-            description: 作为一个金融背景的游戏人，我始终对于产品商业形态充满兴趣；游戏已经引领了商业革命，我相信也将创造新的商业潮流
+            name: 战斗与系统
+            description: 长期参与战斗、技能、数值、经济与联网系统设计，重视机制、数据与手感反馈的一致性。
         -
-            name: 数据科学
-            description: 本科阶段接受金融数学训练；2015年起追Andrew Ng课程并完成全部编程作业，持续关注机器学习在游戏中的应用。
+            name: 工程协作
+            description: 能在UE/Unity项目中与工程侧对齐实现边界，搭建配置、调试与验证流程，减少设计到实现的信息损耗。
         -
-            name: 技术
-            description: 喜欢自己写代码、写工具，喜欢用先进技术来帮助工作目标的实现。(此简历使用ReactJS制作)
+            name: 技术社区
+            description: Unreal Engine中国社区QQ群管理员，长期参与UE技术交流。
+skills:
+    title: 技术栈
+    list:
+        Unreal Engine:
+            - Gameplay Framework
+            - Replication/RPC
+            - 蓝图+C++
+            - AIController/行为树
+            - Gameplay Ability
+        Unity:
+            - C#
+            - Mirror
+            - HybridCLR
+            - WebSocket
+        Scripting:
+            - Lua
+            - Python
+            - puerts
+        Workflow:
+            - 可运行玩法原型
+            - 技能配置与调试
+            - 数值工具

@@ -33,6 +33,9 @@ const componentMap = {
 const renderSidebarCategory = function renderSidebarCategory(key : string, value : any) {
   if (key !== 'children') {
     const Component = componentMap[key];
+    if (!Component) {
+      return null;
+    }
     return (
       <div key={key}><Component {...value} /></div>
     );
