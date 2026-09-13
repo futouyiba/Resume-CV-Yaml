@@ -12,6 +12,10 @@
     min-height: 594mm;
   }
 
+  .sidebar-wrapper .container-block {
+    padding: 38px 25px;
+  }
+
   .main-wrapper .category-section .item,
   .main-wrapper .category-section .item-next-page {
     break-inside: avoid;
