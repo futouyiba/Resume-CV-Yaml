@@ -26,8 +26,23 @@ jobs:
       - name: Build resume
         run: npm run build
 
+      - name: Render PDF snapshot
+        run: |
+          mkdir -p render-root/ReactJSResumeWithPDF
+          cp -R build/. render-root/ReactJSResumeWithPDF/
+          python3 -m http.server 8080 --directory render-root >/tmp/resume-server.log 2>&1 &
+          sleep 2
+          BROWSER=$(command -v google-chrome || command -v google-chrome-stable || command -v chromium-browser || command -v chromium || true)
+          echo "Browser: $BROWSER"
+          test -n "$BROWSER"
+          "$BROWSER" --headless=new --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf=resume-2026-slg.pdf http://127.0.0.1:8080/ReactJSResumeWithPDF/
+          test -s resume-2026-slg.pdf
+          ls -lh resume-2026-slg.pdf
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume-build-2026-slg
-          path: build
+          path: |
+            build
+            resume-2026-slg.pdf
