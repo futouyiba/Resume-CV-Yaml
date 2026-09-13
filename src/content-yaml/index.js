@@ -1,21 +1,10 @@
-import sidebar from '../content-yaml/sidebar.yaml';
-import profile from './profile.yaml';
-import experience from './experience.yaml';
-import projects from './projects.yaml';
+import sidebar from '!!yaml-loader!./sidebar.yaml';
+import profile from '!!yaml-loader!./profile.yaml';
+import experience from '!!yaml-loader!./experience.yaml';
+import projects from '!!yaml-loader!./projects.yaml';
 
-
-// const YAML = require('yaml');
-// const fs = require('fs');
-
-
-// const sidebarYaml = require('../content-yaml/sidebar.yaml');
-// const sidebarYaml = fs.readFileSync('../content-yaml/sidebar.yaml', 'utf-8');
-
-// const sidebarSub = YAML.parse(sidebarYaml);
-// const sidebarSub = yaml.parse(fs.readFileSync('../content-yaml/sidebar.yaml'));
-// console.log(`sidebar yaml file content:${sidebarYaml}`);
-// console.log(`sidebarSub:${sidebarYaml}`);
-
+// Use the YAML loader explicitly so production builds do not fall through
+// to webpack's generic file-loader and turn resume data into asset URLs.
 export const data = {
   sidebar,
   profile,
