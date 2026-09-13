@@ -26,7 +26,7 @@ jobs:
       - name: Build resume
         run: npm run build
 
-      - name: Render PDF snapshot
+      - name: Render and verify browser output
         run: |
           mkdir -p render-root/ReactJSResumeWithPDF
           cp -R build/. render-root/ReactJSResumeWithPDF/
@@ -35,7 +35,11 @@ jobs:
           BROWSER=$(command -v google-chrome || command -v google-chrome-stable || command -v chromium-browser || command -v chromium || true)
           echo "Browser: $BROWSER"
           test -n "$BROWSER"
-          "$BROWSER" --headless=new --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf=resume-2026-slg.pdf http://127.0.0.1:8080/ReactJSResumeWithPDF/
+          URL=http://127.0.0.1:8080/ReactJSResumeWithPDF/
+          "$BROWSER" --headless=new --no-sandbox --disable-gpu --virtual-time-budget=5000 --dump-dom "$URL" > rendered-dom.html
+          grep -q '宋 甫' rendered-dom.html
+          grep -q 'Apex Fishing' rendered-dom.html
+          "$BROWSER" --headless=new --no-sandbox --disable-gpu --virtual-time-budget=5000 --no-pdf-header-footer --print-to-pdf=resume-2026-slg.pdf "$URL"
           test -s resume-2026-slg.pdf
           ls -lh resume-2026-slg.pdf
 
@@ -45,4 +49,5 @@ jobs:
           name: resume-build-2026-slg
           path: |
             build
+            rendered-dom.html
             resume-2026-slg.pdf
