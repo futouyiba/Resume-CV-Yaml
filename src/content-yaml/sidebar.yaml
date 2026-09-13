@@ -1,40 +1,35 @@
 name:
-    title:
-        - 15年工作经验
-    name: '宋 甫'
+  title: 资深数值策划｜SLG / 4X
+  name: 宋 甫
 contact:
-    email:
-        value: 313017350@qq.com
-        icon: 'far fa-envelope'
-    phone:
-        value: '+86 189 1029 4546'
-        icon: 'fas fa-phone'
-    website:
-        value: sf.hyperbola.com.cn
-        icon: 'fas fa-globe'
-    zhihu:
-        value: zhihu.com/people/song-fu-57
-        icon: 'fab fa-zhihu'
-    github:
-        value: github.com/futouyiba
-        icon: 'fab fa-github'
+  email:
+    value: 313017350@qq.com
+    icon: far fa-envelope
+  phone:
+    value: +86 189 1029 4546
+    icon: fas fa-phone
+  website:
+    value: sf.hyperbola.com.cn
+    icon: fas fa-globe
+  zhihu:
+    value: zhihu.com/people/song-fu-57
+    icon: fab fa-zhihu
+  github:
+    value: github.com/futouyiba
+    icon: fab fa-github
 education:
-    title: 教育背景
-    list:
-        -
-            degree: 本科
-            school: 中央财经大学
-            date: 2004.7-2008.7
-            courses: '经济学学士（精算学专业） & 法学学士（辅修）'
+  title: 教育背景
+  list:
+  - degree: 本科
+    school: 中央财经大学
+    date: 2004.07-2008.07
+    courses: 精算学专业，辅修法学｜211 院校
 interests:
-    title: 兴趣点
-    list:
-        -
-            name: 游戏设计
-            description: 游戏是我一生的热爱。游戏如何反映人性、如何带给人新的视野、如何让人得到最多的乐趣，值得不懈的探索
-        -
-            name: 代码
-            description: 喜欢自己写代码、写工具。(此简历使用ReactJS制作)
-        -
-            name: 商业化
-            description: 作为一个金融背景的游戏人，我始终对于产品商业形态充满兴趣；游戏已经引领了商业革命，我相信也将创造新的商业潮流
+  title: 核心能力
+  list:
+  - name: 长线经济与复杂数值
+    description: 从高不确定问题出发，建立经济、成长、战斗、概率、行为等相互耦合的数值体系，并推进到配置、实现与验证。
+  - name: 线上调优与数据分析
+    description: 有成熟 F2P SLG 上线后的数据分析与持续数值调优经历，并有专职游戏数据分析背景。
+  - name: 建模、仿真与工具链
+    description: 将机制与参数转为可计算模型，以自动化配置、批量计算和玩家过程仿真支持大规模参数迭代。Python｜SQL｜Excel/VBA｜Lua｜C#。
