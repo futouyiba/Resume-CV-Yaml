@@ -6,6 +6,7 @@ on:
       - 2026-SLG
   workflow_dispatch:
 
+# Validation workflow for the isolated resume branch.
 jobs:
   build:
     runs-on: ubuntu-latest
