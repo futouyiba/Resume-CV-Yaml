@@ -1,0 +1,30 @@
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  .a4page {
+    min-height: 594mm;
+  }
+
+  .sidebar-wrapper {
+    min-height: 594mm;
+  }
+
+  .main-wrapper .category-section .item,
+  .main-wrapper .category-section .item-next-page {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .main-wrapper .category-section .page-break-before {
+    break-before: page;
+    page-break-before: always;
+    padding-top: 14mm;
+  }
+
+  .pageSpacing {
+    margin-top: 20px;
+  }
+}
